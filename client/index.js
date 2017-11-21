@@ -9,9 +9,7 @@ Vue.use(VueRouter)
 Vue.use(VueSocketio, 'https://vue-socket.herokuapp.com')
 
 const router = new VueRouter({
-  mode: 'history',
-  routes,
-  linkActiveClass: 'active'
+  routes
 })
 
 new Vue({
