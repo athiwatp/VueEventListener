@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 function resolve(dir) {
   return path.resolve(__dirname, dir)
@@ -45,5 +46,12 @@ module.exports = {
         removeAttributeQuotes: true
       },
     }),
+    new CopyWebpackPlugin([
+      {
+        from: resolve('client/assets'),
+        to: 'assets',
+        ignore: ['.*']
+      }
+    ]),
   ]
 }
