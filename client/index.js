@@ -3,10 +3,10 @@ import VueRouter from 'vue-router'
 import VueSocketio from 'vue-socket.io';
 import { routes } from '@/routes/router'
 import App from '@/components/App.vue'
-import keys from './config/keys'
+import keys from '@/config/keys'
 
 Vue.use(VueRouter)
-Vue.use(VueSocketio, 'https://vue-socket.herokuapp.com')
+Vue.use(VueSocketio, keys.hostname)
 
 const router = new VueRouter({
   routes
