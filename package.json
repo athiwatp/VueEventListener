@@ -6,7 +6,8 @@
   "scripts": {
     "client": "webpack-dev-server",
     "server": "nodemon server/server.js",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^3.5.1",
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
     "html-webpack-plugin": "^2.30.1",
