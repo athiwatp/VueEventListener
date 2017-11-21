@@ -8,13 +8,13 @@ const server = http.createServer(app)
 const io = socketIO(server)
 
 io.on('connection', socket => {
-  console.log('user connect')
 
-  
-})
+  socket.on('post', message => {
+    io.emit('newPost', {
+      message
+    })
+  })
 
-io.on('test', (socket) => {
-  console.log(socket)
 })
 
 server.listen(port, () => {
