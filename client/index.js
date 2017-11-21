@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 import VueSocketio from 'vue-socket.io';
 import { routes } from '@/routes/router'
 import App from '@/components/App.vue'
+import keys from '@/config/keys'
 
 Vue.use(VueRouter)
-Vue.use(VueSocketio, 'http://localhost:3000')
+Vue.use(VueSocketio, keys.host)
 
 const router = new VueRouter({
   mode: 'history',
