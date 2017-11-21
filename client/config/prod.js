@@ -1,3 +1,3 @@
 module.exports = {
-  hostname: process.env.HOST_NAME,
+  hostname: 'https://vue-socket.herokuapp.com',
 }
