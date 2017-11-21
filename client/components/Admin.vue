@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>POSTS</p>
+    <p>Admin Page</p>
     <div v-if="posts.length === 0">
       <p>---ไม่พบข้อมูล---</p>
     </div>

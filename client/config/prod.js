@@ -1,3 +1,3 @@
 module.exports = {
-  host: process.env.HOSTNAME,
+  hostname: process.env.HOST_NAME,
 }
